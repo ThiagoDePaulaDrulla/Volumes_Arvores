@@ -1,0 +1,35 @@
+datas<-read.csv('Volumes.csv')
+datas<-read.csv('Volumes.csv')
+datas
+install.packages("mlbench")
+install.packages("randomForest")
+install.packages("e1071")
+install.packages("kernlab")
+install.packages("caret")
+library("caret")
+library("mlbench")
+library("randomForest")
+volumes<-read.csv('Volumes.csv')
+volumes_index <- createDataPartition(volumes$VOL, p=0.80, list=FALSE)
+training <- map[volumes_index,]
+volumes_index <- createDataPartition(volumes$VOL, p=0.80, list=FALSE)
+training <- volumes[volumes_index,]
+test <- volumes[-volumes_index,]
+set.seed(7)
+#Confusion Matrix RandomForest
+rf <- train(classes~., data=training, method="rf")
+volumes_index <- createDataPartition(volumes$VOL, p=0.80, list=FALSE)
+training <- volumes[volumes_index,]
+test <- volumes[-volumes_index,]
+set.seed(7)
+#Confusion Matrix RandomForest
+rf <- train(VOL~., data=training, method="rf")
+install.packages("mlbench")
+install.packages("randomForest")
+install.packages("e1071")
+install.packages("kernlab")
+install.packages("caret")
+library("caret")
+library("mlbench")
+library("randomForest")
+install.packages("e1071")
